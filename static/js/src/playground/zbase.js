@@ -27,13 +27,13 @@ class AcGamePlayground {
         let uuid = this.create_uuid();
 
         $(window).on(`resize.$(uuid)`,(function() {
-            console.log('rasize');
             outer.resize();
         }));
 
         if (this.root.AcWingOS) {
             this.root.AcWingOS.api.window.on_close(function(){
                 $(window).off(`resize.$(uuid)`);
+                outer.hide();
             });
         }
     }
