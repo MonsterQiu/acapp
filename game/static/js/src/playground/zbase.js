@@ -33,10 +33,10 @@ class AcGamePlayground {
         if (this.root.AcWingOS) {
             this.root.AcWingOS.api.window.on_close(function(){
                 $(window).off(`resize.$(uuid)`);
-                outer.hide();
             });
         }
     }
+
 
     resize() {
         this.width = this.$playground.width();

@@ -1,8 +1,12 @@
 export class AcGame {
-    constructor(id, AcWingOS) {
+    constructor(id, AcWingOS, access, refresh) {
         this.id = id;
         this.$ac_game = $('#' + id);
         this.AcWingOS = AcWingOS;
+        this.access = access;
+        this.refresh = refresh;
+        this.access_expires = new Date();
+        this.refresh_expires = new Date();
 
         this.settings = new Settings(this);
         this.menu = new AcGameMenu(this);
