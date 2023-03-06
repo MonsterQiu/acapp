@@ -17,6 +17,15 @@ class AcGameMenu {
         </div>
     </div>
 </div>
+
+<p style="background:none;height: 7%;position: fixed;bottom: 0px;width: 100%;text-align: center;
+"><img style="padding-top:2px;" src="https://athinker.club/static/image/menu/a.png"><a class="banquan" style="color:#ffffff;"
+        href="https://beian.miit.gov.cn/"
+                target="_blank">蜀ICP备2022016210号-1</a>
+                <br>
+                <span style="color:#ffffff;">yiming | @yiming | All rights reserved.</span>
+ </p>
+
 `);
         this.$menu.hide();
         this.root.$ac_game.append(this.$menu);

@@ -13,7 +13,8 @@ class AcGamePlayground {
         return colors[Math.floor(Math.random() * 5)];
     }
 
-    create_uuid() {
+    create_uuid(){
+        // console.log()
         let res = "";
         for (let i = 0; i < 8; i ++) {
             let x = parseInt(Math.floor(Math.random() * 10));
@@ -66,7 +67,7 @@ class AcGamePlayground {
         this.players.push(new Player(this, this.width / 2 / this.scale, 0.5, 0.05, "white", 0.15, "me", this.root.settings.username, this.root.settings.photo));
 
         if (mode === "single mode") {
-            for (let i = 0; i < 5; i ++ ) {
+            for (let i = 0; i < 6; i ++ ) {
                 this.players.push(new Player(this, this.width / 2 / this.scale, 0.5, 0.05, this.get_random_color(), 0.15, "robot"));
             }
         } else if (mode === "multi mode") {
